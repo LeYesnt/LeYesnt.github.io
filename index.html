@@ -4,108 +4,120 @@
 <link rel="icon" href="favicon.png" type="image/x-icon"/>
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
 
+<title>Idler.ml</title>
 <html>
-   <body>
-      <div id="center">
-         <b href="http://LeYesnt.ml/" target="_blank"></b>
-      <div>
-         <pre><a align="bottom" class="btn btn-5" href="wikiredirect.html" target="_blank"> Idler wiki </a>   <a align="bottom" class="btn btn-5" href="buycraftredirect.html" target="_blank"> Online minecraft store </a>   <a align="bottom" class="btn btn-5" href="merchstoreredirect.html" target="_blank"> Merch store </a></pre>
-      </div>
-      </div>
-   </body>
+    <body>
+        <video autoplay loop muted id="vid">
+            <source src="idlertrailer.mp4" type="video/mp4">
+        </video>
+
+        <svg class="topWave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="1" d="M0,160L20,170.7C40,181,80,203,120,181.3C160,160,200,96,240,80C280,64,320,96,360,112C400,128,440,128,480,117.3C520,107,560,85,600,80C640,75,680,85,720,96C760,107,800,117,840,112C880,107,920,85,960,101.3C1000,117,1040,171,1080,186.7C1120,203,1160,181,1200,181.3C1240,181,1280,203,1320,202.7C1360,203,1400,181,1420,170.7L1440,160L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path>
+        </svg>
+        
+        <div class="parallax"></div>
+        
+        <div class="center">
+            <pre><a align="bottom" class="btn btn-5" href="wikiredirect.html" target="_blank"> Idler wiki </a>   <a align="bottom" class="btn btn-5" href="buycraftredirect.html" target="_blank"> Online minecraft store </a>   <a align="bottom" class="btn btn-5" href="merchstoreredirect.html" target="_blank"> Merch store </a></pre>
+        </div>
+
+        <div class="parallax"></div>
+
+        <svg class="bottomWave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="1" d="M0,288L20,282.7C40,277,80,267,120,240C160,213,200,171,240,154.7C280,139,320,149,360,160C400,171,440,181,480,165.3C520,149,560,107,600,112C640,117,680,171,720,186.7C760,203,800,181,840,154.7C880,128,920,96,960,112C1000,128,1040,192,1080,213.3C1120,235,1160,213,1200,181.3C1240,149,1280,107,1320,80C1360,53,1400,43,1420,37.3L1440,32L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path>
+        </svg>
+    </body>
 </html>
 
-      <!--css NOT != html-->
-      
-   <script type="text/javascript">
-      function insertText(elemID, text)
-      {
-         var elem = document.getElementById(elemID);
-         elem.innerHTML += text;
-      }
-
-      (function titleScroller(text) {
-         document.title = text;
-         setTimeout(function () {
-            titleScroller(text.substr(1) + text.substr(0, 1));
-         }, 500);
-      }("Idler     "));
-   </script>
-
 <style>
-   body {
-        color: #494949;
+    .parallax {
+        height: 100%; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
+    }
+    body {
+        background-color: #464646;
         user-select: none;
         font-family: monospace;
         font-weight: bold;
         text-shadow: 1px 1px 1px rgba(0,0,0,100), 1px 1px 1px rgba(0,0,0,100);
-      }
+    }
 
-      pre {
+    pre {
         text-align: center;
         font-family: monospace;
         font-size: 20px;
-      }
-      
-      p {
+    }
+    
+    p {
         text-align: center;
         font-family: monospace;
-      }
+    }
 
-      #center {               
+    a {
+        color: #b1b1b1;
+        text-decoration: none;
+    }
+
+    b {
+        color: #b1b1b1
+    }
+
+    .center {               
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);    
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-      }
+        transform: translate(-50%, -50%);
+    }
 
-      a {
-         color: #00beaf;
-         text-decoration: none;
-      }
+    .bottomWave {
+        align-content: center;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
 
-      b {
-         color: #00beaf
-      }
+    .topWave {
+        align-content: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
 
-      .btn-5 {
-         border: 0 solid;
-         box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-         outline: 1px solid;
-         outline-color: rgba(255, 255, 255, .5);
-         outline-offset: 0px;
-         text-shadow: none;
-         transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-         } 
+    .btn-5 {
+        border: 0.5px solid;
+        outline: 1px solid;
+        outline-color: #00ffff;
+        outline-offset: 0px;
+        text-shadow: none;
+        transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    } 
 
-      .btn-5:hover {
-         border: 1px solid;
-         box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-         outline-color: rgba(255, 255, 255, 0);
-         outline-offset: 15px;
-         text-shadow: 1px 1px 2px #427388; 
-      }
+    .btn-5:hover {
+        border: 2px solid;
+        border-color: #00ffff;
+        outline-color: rgba(160, 160, 160, 0.5);;
+        outline-offset: 15px;
+        text-shadow: 1px 1px 2px #427388; 
+    }
 
-      .header {
-         background-color: #f1f1f1;
-         padding: 20px;
-         text-align: center;
-      }
+    .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+    }
 
-      #vid {
-         filter: blur(15px);
-         position:absolute;
-         right: 0;
-         bottom: 0;
-         min-width: 100%;
-         min-height: 70%; 
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-      }
+    #vid {
+        filter: blur(15px);
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 70%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 </style>
