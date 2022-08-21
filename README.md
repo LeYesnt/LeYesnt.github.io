@@ -1,2 +1,2 @@
 # Idler Discord Bot website
- - Dev: ♡**LeYesnt**♡
+ - Created with love by **LeYesnt**
